@@ -7,10 +7,11 @@ import com.example.domain.model.User
 import com.example.presentaion.base.BaseFragment
 import com.example.presentaion.databinding.FragmentPhoneBinding
 import com.example.presentaion.screens.phone.PhoneViewModel.Effect
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PhoneFragment : BaseFragment<FragmentPhoneBinding>(FragmentPhoneBinding::inflate) {
 
-    private lateinit var viewModel: PhoneViewModel
+    private  val viewModel: PhoneViewModel by viewModel()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
