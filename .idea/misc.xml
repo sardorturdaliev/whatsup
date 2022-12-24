@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Whatsup/presentaion/src/main/res/layout/activity_main.xml" value="0.1859375" />
         <entry key="..\:/Whatsup/presentaion/src/main/res/layout/fragment_phone.xml" value="0.2" />
+        <entry key="..\:/Whatsup/presentaion/src/main/res/layout/layout.xml" value="0.1" />
       </map>
     </option>
   </component>

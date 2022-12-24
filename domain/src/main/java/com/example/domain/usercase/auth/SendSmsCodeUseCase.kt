@@ -6,6 +6,7 @@ class SendSmsCodeUseCase constructor(
     private val authrepository: Authrepository
 ){
 
+
     operator fun invoke(phone:String){
         authrepository.sendSmsCode(phone)
     }

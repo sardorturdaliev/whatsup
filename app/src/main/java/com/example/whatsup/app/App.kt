@@ -1,10 +1,7 @@
 package com.example.whatsup.app
 
 import android.app.Application
-import com.example.whatsup.di.remoteModule
-import com.example.whatsup.di.repositoryModule
-import com.example.whatsup.di.useCaseModule
-import com.example.whatsup.di.viewModelModule
+import com.example.whatsup.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -17,7 +14,7 @@ class App : Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(repositoryModule, useCaseModule, remoteModule, viewModelModule)
+            modules(appModule,repositoryModule, useCaseModule, remoteModule, viewModelModule)
         }
 
     }
